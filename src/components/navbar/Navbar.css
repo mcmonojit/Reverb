@@ -1,13 +1,4 @@
-:root {
-  /* light */
-  --cornflowerBlue: #6495ed;
-  --blueGray: #6699cc;
-
-  --bayernBlue: #0066b2;
-  --cobaltBlue: #0047ab;
-  --waterBlue: #003566;
-  --offWhite: #f5f3ff;
-}
+@import url(../../utils/colourVariables.scss);
 
 .navbar {
   background-color: var(--blueGray);
@@ -21,6 +12,44 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.searchbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 0.25rem;
+  /* margin: auto; */
+  /* margin-left: 1rem; */
+  height: 2rem;
+}
+
+.searchbar input {
+  border: none;
+  margin: 0rem;
+  padding: 0rem;
+  font-size: 1.05rem;
+  letter-spacing: 1.15px;
+  color: darkslategray;
+}
+
+.searchbar input:focus {
+  outline: none;
+}
+
+.searchIcon {
+  color: var(--black);
+  margin: 0rem 0.5rem;
+  cursor: pointer;
 }
 
 .dock {
@@ -28,4 +57,18 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  gap: 2rem;
+}
+
+.dockIcons {
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+.user img {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
 }
