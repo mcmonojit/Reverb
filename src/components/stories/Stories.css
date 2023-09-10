@@ -1,0 +1,28 @@
+.stories {
+  margin: 0.65rem 0rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+}
+.story {
+  height: 7rem;
+  width: 5.5rem;
+  border-radius: 0.7rem;
+  object-fit: contain;
+  overflow: hidden;
+  position: relative;
+  /* z-index: ; */
+}
+
+.story img {
+  height: 100%;
+  width: 100%;
+}
+
+.story span {
+  color: var(--white);
+  font-weight: 500;
+  position: absolute;
+  bottom: 0.25rem;
+  left: 0.5rem;
+}

@@ -1,8 +1,19 @@
+import { UseTitle } from "../../hook/UseTitle";
+import Stories from "../../components/stories/Stories";
+import Posts from "../../components/posts/Posts";
+
 const Home = () => {
+  UseTitle(" REVERB | Home ");
   return (
-    <>
-      <p>Home Page</p>
-    </>
+    <div>
+      <div>
+        <Stories />
+      </div>
+
+      <div>
+        <Posts />
+      </div>
+    </div>
   );
 };
 

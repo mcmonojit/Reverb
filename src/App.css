@@ -20,6 +20,10 @@ a:-webkit-any-link {
   color: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   /* font-family: "Quicksand", sans-serif; */
@@ -29,7 +33,8 @@ body {
 .container-main {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  background-color: var(--lightNeutral);
+  /* align-items: flex-start; */
 }
 
 .flex-row {

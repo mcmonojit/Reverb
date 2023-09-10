@@ -1,7 +1,10 @@
 @import url(../../utils/colourVariables.scss);
 
 .navbar {
-  background-color: var(--blueGray);
+  position: sticky;
+  top: 0;
+  background-color: var(--bayernBlue);
+  /* background-color: var(--blueGray); */
   /* background-image: radial-gradient(
       farthest-corner at top left,
       var(--blueGray),
@@ -13,6 +16,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1.5rem;
+  z-index: 10;
 }
 
 .leftSection {
@@ -71,4 +75,5 @@
   width: 2.5rem;
   border-radius: 50%;
   object-fit: cover;
+  cursor: pointer;
 }

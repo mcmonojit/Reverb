@@ -1,34 +1,28 @@
 import "./RightSidebar.css";
+import { BiSort } from "react-icons/bi";
 
 const RightSidebar = () => {
   return (
     <div className="right-sidebar">
       <div className="container">
-        <div className="profile">
-          <p>Right</p>
-          {/* <div className="user">
-            <img src={sampleAvatar} alt="avatar" className="avatar" />
-            <span className="name">Monojit Chakraborty</span>
-            <span className="desc">Full Stack Developer</span>
-          </div>
-          <div className="impression-info">
-            <div className="title">
-              <span>Impression on your posts</span>
-              <span className="highlight">32</span>
-            </div>
-            <div className="title">
-              <span>Who viewed your profile</span>
-              <span className="highlight">14</span>
-            </div>
-          </div>
-          <div className="left-menu">
-            <ImCompass2 />
-            <span>Explore</span>
-          </div>
-          <div className="left-menu">
-            <BiBookmark />
-            <span>Saved</span>
-          </div> */}
+        <div>
+          <p>Create new post</p>
+        </div>
+        <div className="sort-controls">
+          <BiSort />
+          <span>Sort</span>
+        </div>
+        <div className="trending">
+          <p>Trending section</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
+            molestias.
+          </p>
+        </div>
+        <div>
+          <p>Follow</p>
+          <p>Person 1</p>
+          <p>Person 2</p>
         </div>
       </div>
     </div>
