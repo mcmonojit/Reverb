@@ -1,5 +1,14 @@
 .left-sidebar {
-  flex: 2;
+  /* flex: 2; */
+  position: sticky;
+  top: 72px;
+  height: calc(100vh - 72px);
+  overflow-y: scroll;
+  background-color: var(--white);
+}
+
+::-webkit-scrollbar {
+  /* display: none; */
 }
 
 .container {
@@ -25,7 +34,7 @@
   width: 4.75rem;
   border-radius: 50%;
   object-fit: cover;
-  padding: 2px;
+  padding: 1.5px;
   border: 2px solid var(--veryLightGray);
   margin: 0.4rem 0rem 0.35rem 0rem;
 }
@@ -44,7 +53,7 @@
 .impression-info {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   gap: 0.45rem;
   font-size: 0.7rem;
   font-weight: 600;

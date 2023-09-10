@@ -1,0 +1,24 @@
+.comment-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.65rem 0rem;
+}
+
+.comment-card img {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 1px;
+  border: 1.5px solid var(--veryLightGray);
+  margin: 0.35rem 0rem 0.35rem 0.35rem;
+}
+
+.comment-text {
+  font-size: 0.8rem;
+  background-color: var(--lightSlate);
+  border-radius: 0.45rem;
+  padding: 0rem 0.65rem;
+}
